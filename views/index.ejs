@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title> Web Application </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+      
+     
+
+</head>
+<body>
+<header>
+  <div class="title" id="img-logo">
+    <h3 ><a href="#"> Social Application</a></h3>
+  </div>
+     <div class="logo"> <a href="/"><img src="/public/images/logo.jpg" id="ljiljani"></a></div>
+
+     
+<div class="login-container">
+
+        <form action="/login" method="POST">
+                <input type="text" placeholder="Username" name="username">
+                <input type="text" placeholder="Password" name="psw">
+                <button type="submit">Login</button>
+        </form>
+</div>
+     </header>
+
+     <div id="particles-js"></div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+      <script type="text/javascript">
+      particlesJS("particles-js", {"particles":{"number":{"value":300,"density":{"enable":true,"value_area":800}},"color":{"value":"#f1fa3c"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.40,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.3,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":"false","mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+      </script>
+     
+     </script>
+     <div class="container py-md-5">
+
+        <div class="row align-items-center">
+          <div class="col-lg-7 py-3 py-md-5">
+            <h1 class="display-3">Welcome</h1>      
+            <p class="lead">This platform offers great experience and allows connection across the entire world.</p>
+            
+          </div>
+          <div class="col-lg-5 pl-lg-5 pb-3 py-lg-5">
+            <form action="/registration" method="POST" id="registration-form">
+      
+                <div class="form-group">
+                  <label for="username-register" class="text"><small>Username</small></label>
+                  <input name="username" id="username-register" class="form-control" type="text" placeholder="Pick a username" autocomplete="off">
+                </div>
+                
+                <div class="form-group">
+                  <label for="email-register" class="text"><small>Email</small></label>
+                  <input name="email" id="email-register" class="form-control" type="text" placeholder="you@example.com" autocomplete="off">
+                </div>
+                
+                <div class="form-group">
+                  <label for="password-register" class="text mb-1"><small>Password</small></label>
+                  <input name="password" id="password-register" class="form-control" type="password" placeholder="Create a password">
+                </div>
+                
+                <button type="submit" class="py-3 mt-4 btn btn-lg btn-success btn-block">Sign up for OurApp</button>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <footer class="border-top text-center small text-muted py-3">
+                        <p class="m-0">Mulalić Mustafa &copy; 2019 <a href="/" class="text">Social Application</a></p>
+                      </footer>
+                      
+                      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+                      <script>$('[data-toggle="tooltip"]').tooltip()</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
